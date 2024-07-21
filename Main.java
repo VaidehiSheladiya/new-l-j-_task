@@ -1,6 +1,3 @@
-
-
-
 import java.util.Scanner;
 class Food {
     int code;
@@ -19,7 +16,7 @@ class Food {
                 foodType = "Non Vegetarian";
                 break;
             default:
-                foodType = "Unknown";
+                foodType = "Unknown food";
                 break;
         }
     }
@@ -36,10 +33,10 @@ class Food {
     }
 
     void foodOut() {
-        System.out.println("Food Code: " + code);
-        System.out.println("Food Name: " + foodName);
-        System.out.println("Sticker: " + sticker);
-        System.out.println("Food Type: " + foodType);
+        System.out.println( code);
+        System.out.println(foodName);
+        System.out.println(sticker);
+        System.out.println(foodType);
     }public static void main(String[] args) {
         Food foodItem = new Food();
         foodItem.foodIn();
